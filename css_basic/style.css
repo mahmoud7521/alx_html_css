@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Apply display: flex to the body and main containers */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Arrange children horizontally */
+    flex: auto; /* Let main take up remaining space */
+}
+
+/* Set the width of article and aside using flex property */
+article {
+    flex: 2; /* Take up 2/3 of the available width */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    padding: 20px; /* Add some padding for content inside article */
+}
+
+aside {
+    flex: 1; /* Take up 1/3 of the available width */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    padding: 20px; /* Add some padding for content inside aside */
+}
+
+/* Additional styling for header and footer */
+header {
+    background-color: #f0f0f0; /* Add a background color for header */
+    padding: 10px; /* Add some padding for content inside header */
+}
+
+footer {
+    background-color: #f0f0f0; /* Add a background color for footer */
+    padding: 10px; /* Add some padding for content inside footer */
+}
